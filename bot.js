@@ -46,7 +46,8 @@ client.on('message', message => {
 
     if (command === 'ping'){    /* Strict operator  Type must be same too*/ 
         client.commands.get('ping').execute(message, args);
-
+    } else if (command === 'av'){    
+        client.commands.get('av').execute(message, args);
     }
 
 })
